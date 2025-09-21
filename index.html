@@ -1,0 +1,808 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cryptoverse</title>
+ <!--Bootstrap CDN -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr"
+      crossorigin="anonymous"
+    />
+
+    <!--Css Link -->
+    <link rel="stylesheet" href="style.css" />
+
+    <!--Fontawesome CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css"
+      integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+  </head>
+  <body>
+    <!--Header -->
+    <header>
+      <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <i class="fa-solid fa-globe"></i> CryptoVerse
+          </a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <!-- menü ikonu -->
+            <i class="fa-solid fa-bars"></i>
+          </button>
+          <div class="col lapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Cryptos</a>
+              </li>
+
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Testimonials</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!--home -->
+    <section id="home">
+      <div id="carouselExampleCaptions" class="carousel slide">
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="0"
+            class="active"
+            aria-current="true"
+            aria-label="Slide 1"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="1"
+            aria-label="Slide 2"
+          ></button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleCaptions"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          ></button>
+        </div>
+        <div class="carousel-inner">
+          <!--slider-1 -->
+          <div class="carousel-item active">
+            <img src="./images/slider-1.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1>Welcome to CryptoVerse</h1>
+              <p>
+                Your Ultimate Destination for Cryptocurrency Information and
+                Trading
+              </p>
+
+              <div>
+                <button class="btn btn-primary">Explore Cryptos</button>
+                <button class="btn btn-outline-light">Latest News</button>
+              </div>
+            </div>
+          </div>
+          <!--slider-2 -->
+          <div class="carousel-item">
+            <img src="./images/slider-2.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1>Real-Time Market Data</h1>
+              <p>
+                Track cryptocurrency prices, market trends, and trading volumes
+                in real-time
+              </p>
+
+              <div>
+                <button class="btn btn-primary">Views Market</button>
+                <button class="btn btn-outline-light">Market Analysis</button>
+              </div>
+            </div>
+          </div>
+          <!-- slider-3 -->
+          <div class="carousel-item">
+            <img src="./images/slider-3.webp" class="d-block w-100" alt="..." />
+            <div class="carousel-caption">
+              <h1>Expert Insights & News</h1>
+              <p>
+                Stay informed with the latest cryptocurrency news and expert
+                analysis
+              </p>
+
+              <div>
+                <button class="btn btn-primary">Read News</button>
+                <button class="btn btn-outline-light">Get Updates</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleCaptions"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- popular cryptos -->
+    <section id="popular-cryptos">
+      <div class="container py-3">
+        <!--top -->
+        <div class="text-center mt-3">
+          <!--title -->
+          <h1 class="fs-1 fw-bold">Popular Cryptocurrencies</h1>
+
+          <!--description -->
+          <p class="lead text-muted">
+            Track the most traded digital assets in real-time
+          </p>
+        </div>
+      </div>
+      <!--cards wrapper -->
+      <div id="cards-wrapper">
+        <!-- Card-1 -->
+        <div class="card border-0 text-center" id="section-card">
+          <!-- Coin Icon -->
+          <div class="icon">
+            <i class="fa-brands fa-bitcoin"></i>
+          </div>
+
+          <!--coin adı -->
+          <h2 class="card-title fw-bold">Bitcoin</h2>
+
+          <!--coin ücret -->
+
+          <p class="card-text fw-bold fs-5">$ 118.000</p>
+
+          <!-- coin status -->
+          <div class="d-flex align-items-center gap-3">
+            <span class="badge bg-success">+1.5%</span>
+            <span class="text-muted">24h change</span>
+          </div>
+        </div>
+        <!--card-2 -->
+        <div class="card border-0 text-center" id="section-card">
+          <!-- Coin Icon -->
+          <div class="icon">
+            <i class="fa-brands fa-ethereum"></i>
+          </div>
+
+          <!--coin adı -->
+          <h2 class="card-title fw-bold">Ethereum</h2>
+
+          <!--coin price -->
+
+          <p class="card-text fw-bold fs-5">$ 4.800</p>
+
+          <!--coin status -->
+          <div>
+            <span class="badge bg-success">+2.5%</span>
+            <span class="text-muted">24h change</span>
+          </div>
+        </div>
+        <!--card-3 -->
+        <div class="card border-0 text-center" id="section-card">
+          <!--coin icon -->
+          <div class="icon">
+            <i class="fa-solid fa-coins"></i>
+          </div>
+
+          <!--coin adı -->
+          <h2 class="card-title fw-bold">Binance Coin</h2>
+
+          <!--coin ürice -->
+
+          <p class="card-text fw-bold fs-5">$ 800</p>
+
+          <!--coin status -->
+          <div>
+            <span class="badge bg-danger">-0.5%</span>
+            <span class="text-muted">24h change</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--features -->
+    <section id="features">
+      <div class="container py-5 text-center">
+        <!--top -->
+        <div>
+          <h1 class="fw-bold">Our Features</h1>
+
+          <p class="lead text-muted">
+            Discover what makes CryptoVerse stand out
+          </p>
+        </div>
+
+        <!-- cards wrapper -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-3">
+          <!--card-1 -->
+          <div class="col">
+            <div id="section-card">
+              <!-- icon -->
+
+              <div>
+                <h5></h5>
+
+                <span></span>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-shield-halved"></i>
+              </div>
+
+              <!-- title -->
+
+              <h3>Advanced Security</h3>
+
+              <!-- description -->
+
+              <p>
+                State-of-the-art encryption and multi-factor authentication to
+                keep your assets safe
+              </p>
+            </div>
+          </div>
+          <!--card-2 -->
+          <div class="col">
+            <div id="section-card">
+              <!--icon -->
+
+              <div>
+                <h5></h5>
+
+                <span></span>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-chart-line"></i>
+              </div>
+
+              <!--title -->
+
+              <h3>Trading Tools</h3>
+
+              <!--description -->
+
+              <p>
+                Professional-grade charting and analysis tools for informed
+                trading decisions
+              </p>
+            </div>
+          </div>
+          <!--card-3 -->
+          <div class="col">
+            <div id="section-card">
+              <!--icon -->
+
+              <div>
+                <h5></h5>
+
+                <span></span>
+              </div>
+              <div class="icon">
+                <i class="fa-solid fa-mobile"></i>
+              </div>
+
+              <!--title -->
+
+              <h3>Mobile Access</h3>
+
+              <!--description -->
+
+              <p>Trade on-the-go with our fully-featured mobile applications</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--testimonials  -->
+    <section id="testimonials">
+      <div class="container py-5 text-center">
+        <!--top -->
+        <div>
+          <!-- title -->
+          <h1 class="fw-bold">What Our Users Say</h1>
+          <!-- description -->
+          <p class="text-muted lead">
+            Hear from our community of crypto enthusiasts
+          </p>
+        </div>
+
+        <!-- testimonials card wrapper -->
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 mt-5">
+          <!-- testimonials card-1 -->
+          <div class="col">
+            <div id="testimonial-card" class="text-start">
+              <div class="d-flex align-items-center gap-4 mb-3">
+                <!--icon -->
+                <i class="fa-solid fa-circle-user" id="user-icon"></i>
+                <!-- person detail -->
+                <div>
+                  <h5>John D.</h5>
+                  <span>Active Trader</span>
+                </div>
+              </div>
+
+              <!-- description -->
+              <p>
+                "CryptoVerse has transformed my trading experience with its
+                intuitive interface and powerful tools."
+              </p>
+
+              <!-- rating -->
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <!-- testimonials card-2 -->
+          <div class="col">
+            <div id="testimonial-card" class="text-start">
+              <div class="d-flex align-items-center gap-4 mb-3">
+                <!--icon -->
+                <i class="fa-solid fa-circle-user" id="user-icon"></i>
+                <!-- person detail -->
+                <div>
+                  <h5>Sarah M.</h5>
+
+                  <span>Crypto Investor</span>
+                </div>
+              </div>
+
+              <!-- description -->
+              <p>
+                "The real-time data and news updates keep me ahead of the market
+                trends."
+              </p>
+
+              <!-- rating -->
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+          <!-- testimonials card-3 -->
+          <div class="col">
+            <div id="testimonial-card" class="text-start">
+              <div class="d-flex align-items-center gap-4 mb-3">
+                <!--icon -->
+                <i class="fa-solid fa-circle-user" id="user-icon"></i>
+
+                <!-- person detail -->
+
+                <div>
+                  <h5>Mike R.</h5>
+
+                  <span>Active Trader</span>
+                </div>
+              </div>
+              <!-- description -->
+              <p>
+                "As a newbie, I found CryptoVerse's resources incredibly helpful
+                for learning about crypto."
+              </p>
+
+              <!-- rating -->
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- news -->
+    <section id="news">
+      <div class="container py-5">
+        <!-- news title -->
+        <h1 class="text-center fs-1 fw-bold">Latest Crypto News</h1>
+
+        <!--news description  -->
+        <p class="text-center lead">
+          Stay updated with the latest developments in the crypto world
+        </p>
+
+        <!-- cards wrapper -->
+        <div class="row g-4 mt-4">
+          <!-- column-1  -->
+          <div class="col-md-6">
+            <!-- card-1 -->
+            <div class="card" id="news-card">
+              <!--image and category -->
+              <figure>
+                <img
+                  src="images/news-1.webp"
+                  class="card-img-top"
+                  alt="news-1"
+                />
+                <p class="news-category">Market Analysis</p>
+              </figure>
+
+              <!-- card body -->
+              <div class="card-body">
+                <!-- news title -->
+                <h5 class="card-title">Bitcoin Reaches New All-Time High</h5>
+
+                <!-- news description -->
+                <p class="card-text">
+                  Bitcoin has surged past $45,000, marking a new milestone in
+                  its price history...
+                </p>
+
+                <!-- news data -->
+                <div class="d-flex align-items-center gap-3">
+                  <!-- published time -->
+                  <p class="text-muted">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>2 hours ago</span>
+                  </p>
+                  <!-- comments -->
+                  <p class="text-muted">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>24 comments</span>
+                  </p>
+                </div>
+
+                <!-- button -->
+                <button class="btn btn-outline-primary">Read More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- column-2  -->
+          <div class="col-md-6">
+            <!-- card-2 -->
+            <div class="card" id="news-card">
+              <!-- image and category -->
+              <figure>
+                <img
+                  src="images/news-2.webp"
+                  class="card-img-top"
+                  alt="news-1"
+                />
+                <p class="news-category">Technology</p>
+              </figure>
+
+              <!-- card body -->
+              <div class="card-body">
+                <!-- news title -->
+                <h5 class="card-title">
+                  Ethereum 2.0 Update Successfully Implemented
+                </h5>
+
+                <!-- news description -->
+                <p class="card-text">
+                  The Ethereum network has completed its major upgrade,
+                  promising improved scalability...
+                </p>
+
+                <!-- news data -->
+                <div class="d-flex align-items-center gap-3">
+                  <!-- published time -->
+                  <p class="text-muted">
+                    <i class="fa-regular fa-clock"></i>
+                    <span>4 hours ago</span>
+                  </p>
+                  <!--comments -->
+                  <p class="text-muted">
+                    <i class="fa-regular fa-comment"></i>
+                    <span>18 comments</span>
+                  </p>
+                </div>
+
+                <!-- button -->
+                <button class="btn btn-outline-primary">Read More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--contact -->
+    <section id="contact">
+      <div class="container py-5">
+        <div class="text-center">
+          <!--title -->
+          <h1 class="fs-1 fw-bold">Get in Touch</h1>
+
+          <!-- description -->
+          <p class="lead text-muted">
+            Have questions? We'd love to hear from you
+          </p>
+        </div>
+
+        <!--wrapper -->
+        <div class="row mt-4" id="contact-wrapper">
+          <!--info column -->
+          <div class="col-md-6">
+            <!-- title -->
+            <h1>Contact Information</h1>
+
+            <!-- info item-1 -->
+            <div class="d-flex gap-3 my-4">
+              <i class="fa-solid fa-location-dot" id="info-item-icon"></i>
+              <div>
+                <h4>Address</h4>
+                <p>123 Crypto Street, Digital City, 12345</p>
+              </div>
+            </div>
+            <!-- info item-2 -->
+            <div class="d-flex gap-3 my-4">
+              <i class="fa-solid fa-phone" id="info-item-icon"></i>
+
+              <div>
+                <h4>Phone</h4>
+                <p>+1 (555) 123-4567</p>
+              </div>
+            </div>
+            <!-- info item-3 -->
+            <div class="d-flex gap-3 my-4">
+              <i class="fa-solid fa-envelope" id="info-item-icon"></i>
+
+              <div>
+                <h4>Email</h4>
+                <p>info@cryptoverse.com</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- form column -->
+          <div class="col-md-6">
+            <form>
+              <!-- name input -->
+              <input
+                type="text"
+                class="form-control mb-3"
+                placeholder="Your Name"
+              />
+
+              <!-- email input -->
+              <input
+                type="email"
+                class="form-control mb-3"
+                placeholder="Your Email"
+              />
+
+              <!-- subject input -->
+              <input
+                type="text"
+                class="form-control mb-3"
+                placeholder="Your Subject"
+              />
+
+              <!-- textarea -->
+              <textarea
+                class="form-control mb-3"
+                rows="5"
+                placeholder="Your message"
+              ></textarea>
+
+              <!-- button -->
+              <button class="btn btn-primary">Send message</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer -->
+    <footer>
+      <div class="container">
+        <!--top -->
+        <div
+          class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4"
+        >
+          <!-- column-1 -->
+          <div class="col mb-5">
+            <!-- logo -->
+            <h3>
+              <i class="fa-solid fa-globe" id="logo"></i>
+              CryptoVerse
+            </h3>
+
+            <!-- description -->
+            <p class="lead text-white-50">
+              Your trusted platform for cryptocurrency information and trading.
+            </p>
+
+            <!-- badge -->
+            <div>
+              <span class="badge bg-white text-dark">
+                <i class="fa-solid fa-lock"></i>
+                Secure
+              </span>
+              <span class="badge bg-white text-dark">
+                <i class="fa-solid fa-shield-halved"></i>
+                Verified
+              </span>
+              <span class="badge bg-white text-dark">
+                <i class="fa-solid fa-bolt"></i>
+                Fast
+              </span>
+            </div>
+          </div>
+
+          <!-- column-2 -->
+          <div class="col mb-5">
+            <!-- title -->
+            <h3>Quick Links</h3>
+
+            <!-- list -->
+            <ul class="list-unstyled mt-3">
+              <li>
+                <a class="text-decoration-none text-white-50" href="#">Home</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-white-50" href="#"
+                  >Cryptos</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white-50" href="#">News</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-white-50" href="#"
+                  >Contact</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white-50" href="#">
+                  About Us</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- column-3 -->
+          <div class="col mb-5">
+            <h3>Resources</h3>
+
+            <!-- list -->
+            <ul class="list-unstyled mt-3">
+              <li>
+                <a class="text-decoration-none text-white-50" href="#">Blog</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-white-50" href="#"
+                  >Guides</a
+                >
+              </li>
+              <li>
+                <a class="text-decoration-none text-white-50" href="#">FAQ</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-white-50" href="#">API</a>
+              </li>
+              <li>
+                <a class="text-decoration-none text-white-50" href="#">
+                  Status</a
+                >
+              </li>
+            </ul>
+          </div>
+          <!-- column-4 -->
+          <div class="col mb-5">
+            <!-- title -->
+            <h3>Newsletter</h3>
+
+            <!-- description -->
+            <p>Subscribe to our newsletter for the latest updates.</p>
+
+            <!-- form -->
+            <form class="d-flex input-group">
+              <input
+                type="email"
+                class="form-control bg-dark border-secondary"
+              />
+              <button class="btn btn-primary">
+                <i class="fa-solid fa-paper-plane"></i>
+              </button>
+            </form>
+
+            <!-- market -->
+            <div class="mt-4">
+              <!--text -->
+              <h6>Download App</h6>
+
+              <!-- buttons -->
+              <div class="d-flex gap-2">
+                <!-- app store -->
+                <button class="btn btn-outline-light btn-sm">
+                  <i class="fa-brands fa-apple"></i>
+                  App Store
+                </button>
+                <!--play store -->
+                <button class="btn btn-outline-light btn-sm">
+                  <i class="fa-brands fa-google-play"></i>
+                  Play Store
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- copyright -->
+        <div class="row mt-5 py-4 align-items-center">
+          <!-- copyrigt text -->
+          <div class="col-md-6">
+            <p class="text-white-50">
+              &copy; 2025 CryptoVerse. All rights reserved.
+            </p>
+          </div>
+
+          <!-- copyrigt links -->
+          <div class="col-md-6">
+            <div
+              class="bg-danger d-flex gap-3 justify-content-center justify-content-md-end"
+            >
+              <a href="#" class="text-decoration-none text-white-50"
+                >Terms of Service</a
+              >
+              <a href="#" class="text-decoration-none text-white-50"
+                >Privacy Policy</a
+              >
+              <a href="#" class="text-decoration-none text-white-50">Cookies</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- bootstrap js bağlantısı  -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>
